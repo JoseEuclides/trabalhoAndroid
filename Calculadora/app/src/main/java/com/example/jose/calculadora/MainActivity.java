@@ -1,9 +1,8 @@
 package com.example.eduardo.calculadora;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         resultado = val1 + val2;
 
-        tvResultado.setText("Resultado da Soma: "+resultado);
+        tvResultado.setText(""+resultado);
     }
 
     public void subtrair(View view) {
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         resultado = val1 - val2;
 
-        tvResultado.setText("Resultado da Subtração: "+resultado);
+        tvResultado.setText(""+resultado);
     }
 
     public void multiplicar(View view) {
@@ -50,17 +49,18 @@ public class MainActivity extends AppCompatActivity {
 
         resultado = val1 * val2;
 
-        tvResultado.setText("Resultado da Multiplicação: "+resultado);
+        tvResultado.setText(""+resultado);
 
     }
 
     public void dividir(View view) {
-        val1 = Double.parseDouble(edValor1.getText().toString());
-        val2 = Double.parseDouble(edValor2.getText().toString());
-
-        resultado = val1 / val2;
-
-        tvResultado.setText("Resultado da Divisão: "+resultado);
-
+        if(Double.parseDouble(edValor2.getText().toString()) == 0) {
+            tvResultado.setText("Não pode dividir por 0");
+        }else {
+            val1 = Double.parseDouble(edValor1.getText().toString());
+            val2 = Double.parseDouble(edValor2.getText().toString());
+            resultado = val1 / val2;
+            tvResultado.setText("" + resultado);
+        }
     }
 }
