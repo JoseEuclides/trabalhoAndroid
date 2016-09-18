@@ -1,4 +1,4 @@
-package com.eduardo.applogin.cardapioapp;
+package com.jose.applogin.cardapioapp;
 
 import org.junit.Test;
 

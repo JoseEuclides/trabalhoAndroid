@@ -1,4 +1,4 @@
-package com.eduardo.applogin.cardapioapp;
+package com.jose.applogin.cardapioapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

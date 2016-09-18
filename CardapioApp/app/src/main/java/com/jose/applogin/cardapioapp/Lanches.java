@@ -1,4 +1,4 @@
-package com.eduardo.applogin.cardapioapp;
+package com.jose.applogin.cardapioapp;
 
 /**
  * Created by eduardo on 12/11/15.

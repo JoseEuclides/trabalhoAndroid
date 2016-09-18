@@ -1,4 +1,4 @@
-package com.eduardo.applogin.cardapioapp;
+package com.jose.applogin.cardapioapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
