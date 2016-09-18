@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        edVaor1 = (EditText)findViewById(R.id.edValor1);
+        edValor1 = (EditText)findViewById(R.id.edValor1);
         edValor2 = (EditText)findViewById(R.id.edValor2);
 
         tvResultado = (TextView)findViewById(R.id.tvResultado);
@@ -27,34 +27,34 @@ public class MainActivity extends AppCompatActivity {
 
     public void somar(View view) {
 
-        num1 = Double.parseDouble(edValor1.getText().toString());
-        num2 = Double.parseDouble(edValor2.getText().toString());
+        val1 = Double.parseDouble(edValor1.getText().toString());
+        val2 = Double.parseDouble(edValor2.getText().toString());
 
-        resultado = num1 + num2;
+        resultado = val1 + val2;
 
         tvResultado.setText("Resultado da Soma: "+resultado);
     }
 
     public void subtrair(View view) {
-        num1 = Double.parseDouble(edValor1.getText().toString());
-        num2 = Double.parseDouble(edValor2.getText().toString());
+        val1 = Double.parseDouble(edValor1.getText().toString());
+        val2 = Double.parseDouble(edValor2.getText().toString());
 
-        resultado = num1 - num2;
+        resultado = val1 - val2;
 
         tvResultado.setText("Resultado da Subtração: "+resultado);
     }
 
-    public void multiplicacao(View view) {
-        num1 = Double.parseDouble(edValor1.getText().toString());
-        num2 = Double.parseDouble(edValor2.getText().toString());
+    public void multiplicar(View view) {
+        val1 = Double.parseDouble(edValor1.getText().toString());
+        val2 = Double.parseDouble(edValor2.getText().toString());
 
-        resultado = num1 * num2;
+        resultado = val1 * val2;
 
         tvResultado.setText("Resultado da Multiplicação: "+resultado);
 
     }
 
-    public void divisao(View view) {
+    public void dividir(View view) {
         val1 = Double.parseDouble(edValor1.getText().toString());
         val2 = Double.parseDouble(edValor2.getText().toString());
 

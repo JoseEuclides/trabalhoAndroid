@@ -30,7 +30,7 @@ public class CadastroLanche extends AppCompatActivity {
 
 
         if (nomeLanche.equals("") || ingredientes.equals("") || valor<=0) {
-            Toast.makeText(getApplicationContext(), "Campo não pode estar vazio!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Nenhum campo pode estar vazio!", Toast.LENGTH_LONG).show();
         }else{
             Lanches l = new Lanches();
 
